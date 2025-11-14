@@ -154,7 +154,7 @@
     <!-- <img src="tml-shortlisted-2025-gear.png" alt="Shortlisted 2025 Global Recognition Awards Badge" /> -->
   </div>
 
-  <a href="mailto:trecy327@gmail.com?subject=TML%20Updates" class="btn">
+  <a href="mailto:TimeMachineLaundromat@gmail.com?subject=TML%20Updates" class="btn">
     Join Our Interest List
   </a>
 </header>
@@ -165,7 +165,7 @@
     <p>
       Time Machine Laundromat LLC, DBA <strong>TML Community Services LLC</strong>, is an innovative,
       eco-friendly laundromat designed to help busy families, students, seniors, and working
-      professionals reclaim their time. TML combines high-efficiency laundry equipment with a
+      professionals reclaim their time. TML combines high-efficiency laundry equipment with a                        
       comfortable hospitality lounge, supervised children’s play area, and a secure, modern environment.
     </p>
     <p>
