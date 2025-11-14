@@ -78,12 +78,9 @@
 
   <section id="contact">
     <h2>Contact &amp; Updates</h2>
-    <p>
-      Time Machine Laundromat is currently in development. For partnership opportunities,
-      media inquiries, or updates about our opening:
-    </p>
+     </p>
     <p><strong>Owner &amp; Founder:</strong> Patrice Hill Kohn</p>
-    <p><strong>Email:</strong> <a href="mailto:trecy327@gmail.com">trecy327@gmail.com</a></p>
+    <p><strong>Email:</strong> <a href="mailto:TimeMachineLaundromat@gmail.com">TimeMachineLaundromat@gmail.com</a></p>
     <p><strong>Legal Entity:</strong> Time Machine Laundromat LLC, DBA TML Community Services LLC</p>
     <p>
       You can also click the button at the top of the page to join our interest list.
