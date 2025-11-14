@@ -94,10 +94,3 @@
 <footer>
   &copy; <span id="year"></span> Time Machine Laundromat LLC, DBA TML Community Services LLC. All rights reserved.
 </footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
