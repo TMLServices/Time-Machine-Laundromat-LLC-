@@ -7,7 +7,7 @@
     <!-- <img src="tml-shortlisted-2025-gear.png" alt="Shortlisted 2025 Global Recognition Awards Badge" /> -->
   </div>
 
-  <a href="mailto:trecy327@gmail.com?subject=TML%20Updates" class="btn">
+ <p><strong>Email:</strong> <a href="mailto:TimeMachineLaundromat@gmail.com">TimeMachineLaundromat@gmail.com</a></p>
     Join Our Interest List
   </a>
 </header>
