@@ -60,15 +60,15 @@
     }
 
     .hero-image img{
-      width:100%;
-      max-width:820px;
-      height:auto;
-      border-radius:18px;
-      border:1px solid var(--border);
-      box-shadow:0 12px 30px rgba(0,0,0,.12);
-      margin:10px auto 18px;
-      display:block;
-    }
+  width:100%;
+  max-width:700px;      /* reduces dominance */
+  height:auto;
+  border-radius:18px;
+  border:1px solid var(--border);
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+  margin:6px auto 18px;
+  display:block;
+}
 
     .subhead{
       max-width:760px;
@@ -165,9 +165,12 @@
 
     <header>
       <!-- LOGO -->
-      <div class="logo">
-        <img src="LOGO.png" alt="Time Machine Laundromat Logo">
-      </div>
+      .logo img{
+  width:340px;          /* makes logo larger */
+  max-width:85vw;       /* still mobile-safe */
+  height:auto;
+  margin-bottom:22px;
+}
 
       <div class="hero-image">
   <img src="tml-front.png" alt="Front of Time Machine Laundromat">
