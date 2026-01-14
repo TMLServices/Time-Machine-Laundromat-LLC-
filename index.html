@@ -17,7 +17,7 @@
       --border:rgba(15,61,46,.2);
     }
 
-    *{box-sizing:border-box}
+    *{ box-sizing:border-box; }
 
     body{
       margin:0;
@@ -52,23 +52,26 @@
       box-shadow:0 10px 30px rgba(0,0,0,.06);
     }
 
+    /* ✅ Bigger logo */
     .logo img{
-      width:260px;
-      max-width:70vw;
+      width:340px;
+      max-width:85vw;
       height:auto;
-      margin-bottom:18px;
+      margin:0 auto 18px;
+      display:block;
     }
 
+    /* ✅ Slightly smaller front image */
     .hero-image img{
-  width:100%;
-  max-width:700px;      /* reduces dominance */
-  height:auto;
-  border-radius:18px;
-  border:1px solid var(--border);
-  box-shadow:0 12px 30px rgba(0,0,0,.12);
-  margin:6px auto 18px;
-  display:block;
-}
+      width:100%;
+      max-width:700px;
+      height:auto;
+      border-radius:18px;
+      border:1px solid var(--border);
+      box-shadow:0 12px 30px rgba(0,0,0,.12);
+      margin:6px auto 18px;
+      display:block;
+    }
 
     .subhead{
       max-width:760px;
@@ -93,8 +96,8 @@
       font-size:14px;
     }
 
-    a{color:var(--green-2);text-decoration:none}
-    a:hover{color:var(--green)}
+    a{ color:var(--green-2); text-decoration:none; }
+    a:hover{ color:var(--green); }
 
     main{
       display:grid;
@@ -104,7 +107,7 @@
     }
 
     @media(max-width:900px){
-      main{grid-template-columns:1fr}
+      main{ grid-template-columns:1fr; }
     }
 
     .card{
@@ -126,6 +129,7 @@
       margin:12px 0 6px;
       font-size:13px;
       color:var(--muted);
+      text-align:left;
     }
 
     input, textarea{
@@ -136,7 +140,7 @@
       font-size:14px;
     }
 
-    textarea{min-height:120px}
+    textarea{ min-height:120px; resize:vertical; }
 
     button{
       width:100%;
@@ -156,6 +160,12 @@
       font-size:12.5px;
       color:var(--muted);
     }
+
+    .mission-block{
+      max-width:760px;
+      margin:18px auto 6px;
+      text-align:left;
+    }
   </style>
 </head>
 
@@ -164,49 +174,50 @@
     <div class="topbar"></div>
 
     <header>
-      <!-- LOGO -->
-      .logo img{
-  width:340px;          /* makes logo larger */
-  max-width:85vw;       /* still mobile-safe */
-  height:auto;
-  margin-bottom:22px;
-}
+      <!-- ✅ Logo at top -->
+      <div class="logo">
+        <img src="LOGO.png" alt="Time Machine Laundromat Logo">
+      </div>
 
+      <!-- ✅ Front image -->
       <div class="hero-image">
-  <img src="tml-front.png" alt="Front of Time Machine Laundromat">
-</div>
+        <img src="tml-front.png" alt="Front of Time Machine Laundromat">
+      </div>
 
-      <div style="max-width:760px; margin:18px auto 6px; text-align:left;">
+      <p class="subhead">
+        A modern, hospitality-focused laundromat experience coming soon to
+        Miami-Dade County, Florida — designed to help families, professionals,
+        and communities reclaim their time.
+      </p>
 
-  <p style="font-style:italic; color:#333;">
-    <strong>Our Mission:</strong>
-    To provide a clean, efficient, and community-centered laundromat experience
-    that respects time, dignity, and sustainability.
-  </p>
+      <!-- Options A, B, C -->
+      <div class="mission-block">
+        <p style="font-style:italic; color:#333;">
+          <strong>Our Mission:</strong>
+          To provide a clean, efficient, and community-centered laundromat experience
+          that respects time, dignity, and sustainability.
+        </p>
 
-  <p style="margin-top:14px; margin-bottom:6px; color:#333;">
-    <strong>Who We Serve:</strong>
-  </p>
+        <p style="margin-top:14px; margin-bottom:6px; color:#333;">
+          <strong>Who We Serve:</strong>
+        </p>
 
-  <ul style="margin-top:0; color:#333;">
-    <li>Families and working professionals</li>
-    <li>Seniors and students</li>
-    <li>Local small businesses and community partners</li>
-  </ul>
+        <ul style="margin-top:0; color:#333;">
+          <li>Families and working professionals</li>
+          <li>Seniors and students</li>
+          <li>Local small businesses and community partners</li>
+        </ul>
 
-  <p style="margin-top:10px; color:#555;">
-    <strong>Proposed Location:</strong>
-    Miami-Dade County, Florida (site in development).
-  </p>
-
-</div>
-
+        <p style="margin-top:10px; color:#555;">
+          <strong>Proposed Location:</strong>
+          Miami-Dade County, Florida (site in development).
+        </p>
+      </div>
 
       <div class="pill-row">
-        <div class="pill"><strong>Email:</strong>&nbsp;
-          <a href="mailto:TimeMachineLaundromat@gmail.com">
-            TimeMachineLaundromat@gmail.com
-          </a>
+        <div class="pill">
+          <strong>Email:</strong>&nbsp;
+          <a href="mailto:TimeMachineLaundromat@gmail.com">TimeMachineLaundromat@gmail.com</a>
         </div>
         <div class="pill"><strong>Status:</strong>&nbsp;Website under development</div>
       </div>
@@ -232,17 +243,17 @@
         <h2>Contact / Interest Form</h2>
 
         <form id="interestForm">
-          <label>Name</label>
-          <input required>
+          <label for="name">Name</label>
+          <input id="name" required>
 
-          <label>Organization</label>
-          <input>
+          <label for="org">Organization</label>
+          <input id="org">
 
-          <label>Your Email</label>
-          <input type="email" required>
+          <label for="email">Your Email</label>
+          <input id="email" type="email" required>
 
-          <label>Message</label>
-          <textarea required></textarea>
+          <label for="msg">Message</label>
+          <textarea id="msg" required></textarea>
 
           <button type="submit">Send Interest Email</button>
         </form>
@@ -258,7 +269,20 @@
   <script>
     document.getElementById("interestForm").addEventListener("submit", function(e){
       e.preventDefault();
-      window.location.href = "mailto:TimeMachineLaundromat@gmail.com";
+      const name = document.getElementById("name").value.trim();
+      const org  = document.getElementById("org").value.trim();
+      const email= document.getElementById("email").value.trim();
+      const msg  = document.getElementById("msg").value.trim();
+
+      const subject = encodeURIComponent("TML Website Interest");
+      const body = encodeURIComponent(
+        "Name: " + name + "\\n" +
+        "Organization: " + (org || "—") + "\\n" +
+        "Email: " + email + "\\n\\n" +
+        "Message:\\n" + msg
+      );
+
+      window.location.href = "mailto:TimeMachineLaundromat@gmail.com?subject=" + subject + "&body=" + body;
     });
   </script>
 </body>
