@@ -215,12 +215,38 @@
       </div>
 
       <div class="pill-row">
-        <div class="pill">
-          <strong>Email:</strong>&nbsp;
-          <span>TimeMachineLaundromat@gmail.com</span>
-        </div>
-        <div class="pill"><strong>Status:</strong>&nbsp;Website under development</div>
-      </div>
+
+  <div class="pill">
+    <strong>Email:</strong>&nbsp;
+    <span id="tmlEmail">TimeMachineLaundromat@gmail.com</span>
+  </div>
+
+  <button
+    type="button"
+    id="copyEmailBtn"
+    class="pill"
+    style="cursor:pointer; font-weight:700;"
+  >
+    Copy Email Address
+  </button>
+
+  <div class="pill">
+    <strong>Status:</strong>&nbsp;Website under development
+  </div>
+
+</div>
+
+<script>
+  document.getElementById("copyEmailBtn").addEventListener("click", async () => {
+    const email = "TimeMachineLaundromat@gmail.com";
+    try {
+      await navigator.clipboard.writeText(email);
+      alert("Email copied to clipboard:\n" + email);
+    } catch (err) {
+      prompt("Copy this email address:", email);
+    }
+  });
+</script>
     </header>
 
     <main>
